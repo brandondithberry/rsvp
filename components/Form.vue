@@ -1,11 +1,10 @@
 <template>
   <div class="form w-full">
     <form
-      netlify
-      data-netlify="true"
-      netlify-honeypot="bot-field"
       name="invite"
-      method="POST"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
       action="/success"
       class="w-full mx-auto color-dark"
     >
