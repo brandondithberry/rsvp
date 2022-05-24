@@ -1,6 +1,6 @@
 <template>
   <div class="form w-full">
-    <form name="Invitation" data-netlify="true" action="success">
+    <form name="Invitation" data-netlify="true" action="/success" method="POST">
       <div class="grid grid-cols-2 gap-4">
         <label>First Name <input type="text" name="firstname" /></label>
         <label>Last Name <input type="text" name="lastname" /></label>
