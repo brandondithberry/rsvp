@@ -1,9 +1,10 @@
 <template>
   <div class="form w-full">
-    <form action="success" name="rsvps" netlify>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
-      <button class="btn" type="submit">Send RSVP</button>
+    <form name="rsvp" netlify>
+      <label>First Name <input type="text" name="firstname" /></label>
+      <label>Last Name <input type="text" name="lastname" /></label>
+      <label>Email <input type="email" name="email" /></label>
+      <button class="btn" type="submit">Send</button>
     </form>
   </div>
 </template>
