@@ -1,27 +1,8 @@
 <template>
   <div class="form w-full">
-    <form name="RSVP" method="POST" action="/success" class="w-full mx-auto color-dark" netlify>
-      <div class="w-full grid grid-cols-2 text-left gap-4">
-        <div>
-          <label>First Name</label>
-          <input id="firstname" type="text" name="firstname" required />
-        </div>
-        <div>
-          <label>Last Name</label>
-          <input id="lastname" type="text" name="lastname" required />
-        </div>
-      </div>
-      <div class="w-full grid grid-cols-1 text-left">
-        <label>Email</label>
-        <input id="email" type="email" name="email" required />
-        <label>Company Name</label>
-        <input id="company" type="text" name="company" required />
-        <h4>
-          We will require all attendees to show proof of vaccination or be
-          tested on the day of the event.
-        </h4>
-        <label><input type="checkbox" name="vaccinated" value="vaccinated" /> Yes, I am fully vaccinated.</label>
-      </div>
+    <form action="success" name="rsvps" netlify>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
       <button class="btn" type="submit">Send RSVP</button>
     </form>
   </div>
