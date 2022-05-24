@@ -1,20 +1,20 @@
 <template>
   <div class="form w-full">
     <form
-      name="rsvp"
-      method="POST"
       netlify
       netlify-honeypot="bot-field"
       data-netlify="true"
+      name="invite"
+      method="POST"
       action="/success"
       class="w-full mx-auto color-dark"
     >
-      <input type="hidden" name="form-name" value="rsvp" />
       <p class="hidden">
         <label>
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
       </p>
+      <input type="hidden" name="form-name" value="invite" />
       <div class="w-full grid grid-cols-2 text-left gap-4">
         <div>
           <label for="firstname">First Name</label>
