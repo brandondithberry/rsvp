@@ -1,6 +1,6 @@
 <template>
   <div class="form w-full">
-    <form name="rsvp" netlify>
+    <form name="rsvp" netlify data-netlify="true">
       <label>First Name <input type="text" name="firstname" /></label>
       <label>Last Name <input type="text" name="lastname" /></label>
       <label>Email <input type="email" name="email" /></label>
