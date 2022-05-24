@@ -1,8 +1,7 @@
 <template>
   <div class="form w-full">
-    <form name="invitation" netlify data-netlify="true">
+    <form name="Invitation" data-netlify="true" action="success">
       <div class="grid grid-cols-2 gap-4">
-        <input type="hidden" name="form-name" value="invitation">
         <label>First Name <input type="text" name="firstname" /></label>
         <label>Last Name <input type="text" name="lastname" /></label>
       </div>
