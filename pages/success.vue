@@ -2,7 +2,7 @@
   <section>
     <div class="center">
       <h1>Thanks for your RSVP!</h1>
-      <a class="btn" href="/" @click="closeInvite">Return</a>
+      <a class="btn" href="/">Return</a>
     </div>
   </section>
 </template>
