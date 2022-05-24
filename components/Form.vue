@@ -1,18 +1,45 @@
 <template>
   <div class="form w-full">
-    <form name="Invitation" data-netlify="true" action="/success" method="POST">
+    <form
+      netlify
+      netlify-honeypot
+      name="invitation"
+      method="POST"
+      action="/success"
+    >
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
+      <input type="hidden" name="form-name" value="invitation" />
       <div class="grid grid-cols-2 gap-4">
-        <label>First Name <input type="text" name="firstname" /></label>
-        <label>Last Name <input type="text" name="lastname" /></label>
+        <label for="firstname"
+          >First Name <input id="firstname" type="text" name="firstname"
+        /></label>
+        <label for="lastname"
+          >Last Name <input id="lastname" type="text" name="lastname"
+        /></label>
       </div>
       <div>
-        <label>Email <input type="email" name="email" /></label>
+        <label for="email"
+          >Email <input id="email" type="email" name="email"
+        /></label>
       </div>
       <div class="mt-4">
-        <h4 class="block mt-4">We will require all attendees to show proof of vaccination or be tested on the day of the event.</h4>
+        <h4 class="block mt-4">
+          We will require all attendees to show proof of vaccination or be
+          tested on the day of the event.
+        </h4>
         <h3>Are you fully vaccinated?</h3>
-        <label><input type="radio" name="vaccinated"> Yes, I am fully vaccinated.</label>
-        <label><input type="radio" name="notvaccinated"> No, I am not fully vaccinated.</label>
+        <label
+          ><input id="vaccinated" type="radio" name="vaccinated" /> Yes, I am
+          fully vaccinated.</label
+        >
+        <label
+          ><input id="notvaccinated" type="radio" name="notvaccinated" /> No, I
+          am not fully vaccinated.</label
+        >
       </div>
       <button class="btn" type="submit">Send RSVP</button>
     </form>
@@ -39,7 +66,7 @@
   @apply text-lg block py-2 m-0;
 }
 
-.form  input[type='checkbox'] {
+.form input[type='checkbox'] {
   @apply inline py-3;
 }
 
