@@ -176,7 +176,7 @@ export default {
 
     p {
       border-bottom: 1px solid #acf2fd;
-      padding-bottom: 0.75rem;
+      padding-bottom: 1rem;
     }
   }
 }
