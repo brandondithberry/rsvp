@@ -2,8 +2,8 @@
   <div class="form w-full">
     <form
       netlify
-      netlify-honeypot="bot-field"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       name="invite"
       method="POST"
       action="/success"
@@ -30,6 +30,14 @@
         <input id="email" type="email" name="email" required />
         <label for="company">Company Name</label>
         <input id="company" type="text" name="company" required />
+        <h4>
+          We will require all attendees to show proof of vaccination or be
+          tested on the day of the event.
+        </h4>
+        <label
+          ><input type="checkbox" name="vaccinated" value="vaccinated" /> Yes, I
+          am fully vaccinated.</label
+        >
       </div>
       <button class="btn" type="submit">Send RSVP</button>
     </form>
