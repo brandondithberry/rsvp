@@ -10,6 +10,11 @@
       class="w-full mx-auto color-dark"
     >
       <input type="hidden" name="form-name" value="rsvp" />
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
       <div class="w-full grid grid-cols-2 text-left gap-4">
         <div>
           <label for="firstname">First Name</label>
@@ -26,11 +31,6 @@
         <label for="company">Company Name</label>
         <input id="company" type="text" name="company" required />
       </div>
-      <p class="hidden">
-        <label>
-          Don’t fill this out if you’re human: <input name="bot-field" />
-        </label>
-      </p>
       <button class="btn" type="submit">Send RSVP</button>
     </form>
   </div>
