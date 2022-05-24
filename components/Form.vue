@@ -1,20 +1,20 @@
 <template>
   <div class="form w-full">
-    <form netlify name="invite" method="post" action="success" class="w-full mx-auto color-dark">
+    <form data-netlify="true" name="RSVP" method="POST" action="/success" class="w-full mx-auto color-dark">
       <div class="w-full grid grid-cols-2 text-left gap-4">
         <div>
-          <label for="firstname">First Name</label>
+          <label>First Name</label>
           <input id="firstname" type="text" name="firstname" required />
         </div>
         <div>
-          <label for="lastname">Last Name</label>
+          <label>Last Name</label>
           <input id="lastname" type="text" name="lastname" required />
         </div>
       </div>
       <div class="w-full grid grid-cols-1 text-left">
-        <label for="email">Email</label>
+        <label>Email</label>
         <input id="email" type="email" name="email" required />
-        <label for="company">Company Name</label>
+        <label>Company Name</label>
         <input id="company" type="text" name="company" required />
         <h4>
           We will require all attendees to show proof of vaccination or be
