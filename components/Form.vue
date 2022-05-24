@@ -5,7 +5,7 @@
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      action="/success"
+      action="success"
       class="w-full mx-auto color-dark"
     >
       <p class="hidden">
