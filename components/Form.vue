@@ -1,19 +1,6 @@
 <template>
   <div class="form w-full">
-    <form
-      name="invite"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      action="success"
-      class="w-full mx-auto color-dark"
-    >
-      <p class="hidden">
-        <label>
-          Don’t fill this out if you’re human: <input name="bot-field" />
-        </label>
-      </p>
-      <input type="hidden" name="form-name" value="invite" />
+    <form netlify name="invite" method="post" action="success" class="w-full mx-auto color-dark">
       <div class="w-full grid grid-cols-2 text-left gap-4">
         <div>
           <label for="firstname">First Name</label>
@@ -33,10 +20,7 @@
           We will require all attendees to show proof of vaccination or be
           tested on the day of the event.
         </h4>
-        <label
-          ><input type="checkbox" name="vaccinated" value="vaccinated" /> Yes, I
-          am fully vaccinated.</label
-        >
+        <label><input type="checkbox" name="vaccinated" value="vaccinated" /> Yes, I am fully vaccinated.</label>
       </div>
       <button class="btn" type="submit">Send RSVP</button>
     </form>
