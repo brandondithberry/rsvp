@@ -1,6 +1,6 @@
 <template>
   <div class="form w-full">
-    <form data-netlify="true" name="RSVP" method="POST" action="/success" class="w-full mx-auto color-dark">
+    <form name="RSVP" method="POST" action="/success" class="w-full mx-auto color-dark" netlify>
       <div class="w-full grid grid-cols-2 text-left gap-4">
         <div>
           <label>First Name</label>
